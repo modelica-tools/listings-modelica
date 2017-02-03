@@ -9,8 +9,21 @@ include it in your main project file.
 
 E.g.:
 
-	\usepackage{listings}
-	\input{listings-modelica.cfg}
+    \usepackage{listings}
+    \input{listings-modelica.cfg}
+
+The modelica `modelica-listings.cfg` file also provides to new commands,
+`\code` and `\modelica`, in order to inline code examples without and with
+Modelica syntax highlighting, repsectively.
+
+By default no background colour is set for the listing.
+But the appearance can be modified for example by doing:
+
+    \usepackage{listings}
+    \input{listings-modelica.cfg}
+    \lstset{language = modelica,
+            basicstyle=\fontsize{9pt}{10.5pt}\ttfamily,
+            backgroundcolor = \color{green}}
 
 ## License
 
